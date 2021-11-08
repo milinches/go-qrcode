@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR CODE GENERATOR</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/images/generate.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,11 +17,22 @@
         <h1>{{.Title}}</h1>
     </header>
 
-    <div>
-        <p>Please, enter the string you want.</p>
+    <div class="myprofile">
+        <img src="/static/images/Uzumaki.jpg" alt="an image of a full grown adult">
+        <div class="textsual">
+            <p>sarah uzumaki</p>
+            <p class="icons">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-github"></i>
+            </p>
+        </div>
+    </div>
 
+    <div class="container">
         <form action="/generate" method=post>
-            <input type="text" name="dataString">
+            <label for="dataString">Here, Generate the "QR CODE."</label>
+            <input type="text" name="dataString" placeholder="Please, enter a string to be generated">
             <input type="submit" value="Submit">
         </form>
     </div>
