@@ -83,3 +83,12 @@ header h1 {
     text-align: center;
     padding: 5px;
 }
+
+.myprofile .icons i {
+    margin-left: 5px;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: bold;
+}
